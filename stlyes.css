@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    background-color: rgb(19 19 31);
+}
+
+.head h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.main {
+    display: flex;
+    padding-top: 10px;
+    column-gap: 5%;
+}
+
+.chart-contain {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.chart {
+    height: 450px;
+    padding: 10px;
+    background: #1a1a47;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-cont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-cont button {
+    cursor: pointer;
+    background-color: steelblue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.summary-cont {
+    border: 0.2px solid steelblue;
+
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0px;
+    border-bottom: 0.2px solid steelblue;
+}
+
+.summary {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* .summary p {
+    margin: 0;
+} */
+
+.list-contain {
+    flex: 2;
+    margin: 10px;
+}
+
+.list-contain div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    /* justify-content: center; */
+}
+
+.list-contain div span:first-of-type {
+    padding: 8px;
+    border-radius: 5px;
+    /* margin: 5px; */
+    width: 60px;
+    text-align: center;
+    background-color: steelblue;
+    cursor: pointer;
+}

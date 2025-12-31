@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="stlyes.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+    <div class="head">
+        <h1>Stock Market Analysis</h1>
+    </div>
+
+    <div class="main">
+        <div class="chart-contain">
+            <div class="chart">
+                <div id="chart" style="width: 100%; height: 90%;"></div>
+                <div class="button-cont">
+                    <button onclick="changeSpan('1mo')">
+                        1month
+                    </button>
+                    <button onclick="changeSpan('3mo')">
+                        3month
+                    </button>
+                    <button onclick="changeSpan('1y')">
+                        1year
+                    </button>
+                    <button onclick="changeSpan('5y')">
+                        5year
+                    </button>
+                </div>
+            </div>
+            <div class="summary-cont">
+                <div class="info">
+                    <span>AAPL</span>
+                    <span>$3.953</span>
+                    <span>0.24%</span>
+                </div>
+                <div class="summary">
+                    <p id="summary-text">Apple Inc. designs, manufactures, and markets smartphones, personal computers,
+                        tablets, wearables,
+                        and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of
+                        personal
+                        computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories
+                        comprising
+                        AirPods, Apple TV, Apple Watch, Beats products, and HomePod. It also provides AppleCare support
+                        and
+                        cloud services; and operates various platforms, including the App Store that allow customers to
+                        discover and download applications and digital content, such as books, music, video, games, and
+                        podcasts. In addition, the company offers various services, such as Apple Arcade, a game
+                        subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers
+                        users a curated listening experience with on-demand radio stations; Apple News+, a subscription
+                        news
+                        and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a
+                        co-branded
+                        credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual
+                        property. The company serves consumers, and small and mid-sized businesses; and the education,
+                        enterprise, and government markets. It distributes third-party applications for its products
+                        through
+                        the App Store. The company also sells its products through its retail and online stores, and
+                        direct
+                        sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers.
+                        Apple
+                        Inc. was incorporated in 1977 and is headquartered in Cupertino, California.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="list" class="list-contain">
+            <!-- <div class="stock-info">
+                <span>AAPL</span>
+                <span>$3.953</span>
+                <span>0.24%</span>
+            </div> -->
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
